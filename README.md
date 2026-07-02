@@ -4,13 +4,9 @@ A modern, responsive multi-page website developed for **Save Teeth Dental Clinic
 
 This project was developed as a frontend web development project using HTML, Tailwind CSS, and JavaScript, with a strong focus on responsive design, clean user experience, and modern UI principles.
 
-
-
 ## 🌐 Live Demo
 
-
-
-
+https://sehrish-web209.github.io/Save-Teeth-Dental-Clinic-/
 
 ## 🏥 About the Clinic
 
@@ -18,36 +14,35 @@ This project was developed as a frontend web development project using HTML, Tai
 
 **Location:** Iqbal Plaza, N-35, Kehal, Abbottabad
 
-
 ## 📸 Screenshots
 
 ### 🏠 Home Page
 
-![Home Page](screenshots/Home page.png)
+![Home Page](Screenshots/Home page.png)
 
 ### ℹ️ About Page
 
-![About Page](screenshots/About page.png)
+![About Page](Screenshots/About page.png)
 
 ### 🦷 Services Page
 
-![Services Page](screenshots/Services page.png)
+![Services Page](Screenshots/Services page.png)
 
 ### 👨‍⚕️ Doctors Page
 
-![Doctors Page](screenshots/Doctors page.png)
+![Doctors Page](Screenshots/Doctors page.png)
 
 ### ⭐ Testimonials Page
 
-![Testimonials Page](screenshots/Testimonials page.png)
+![Testimonials Page](Screenshots/Testimonials page.png)
 
 ### 📞 Contact Page
 
-![Contact Page](screenshots/Contact page.png)
+![Contact Page](Screenshots/Contact page.png)
 
 ### 📅 Appointment Page
 
-![Appointment Page](screenshots/Appointment page.png)
+![Appointment Page](Screenshots/Appointment page.png)
 
 
 ## ✨ Features
@@ -80,11 +75,11 @@ This project was developed as a frontend web development project using HTML, Tai
 Save-Teeth-Dental-Clinic/
 │
 ├── assets/
-│   ├── doctor1.jpg
+│   ├── Clinic interior.jpg
 │   ├── hero.jpg
 │   └── ...
 │
-├── screenshots/
+├── Screenshots/
 │   ├── home-page.png
 │   ├── about-page.png
 │   ├── services-page.png
