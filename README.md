@@ -74,45 +74,28 @@ https://sehrish-web209.github.io/Save-Teeth-Dental-Clinic-/
 
 Save-Teeth-Dental-Clinic/
 │
-├── assets/
-
-│   ├── Clinic interior.jpeg
-
-│   ├── hero.jpeg
-
-│   └── ...
+├── 📄 index.html              
+├── 📄 About.html              
+├── 📄 Services.html           
+├── 📄 Doctors.html            
+├── 📄 Testimonials.html      
+├── 📄 Contact.html            
+├── 📄 Appointment.html        
+├── 📄 README.md               ← Project documentation
 │
-├── Screenshots/
-
+├── 📁 assets/
+│   ├── Clinic interior.jpeg   
+│   ├── hero.jpeg            
+│   └── ...                    ← Other assets/images
+│
+├── 📁 Screenshots/           
 │   ├── Home-page.png
-
 │   ├── About-page.png
-
 │   ├── Services-page.png
-
 │   ├── Doctors-page.png
-
 │   ├── Testimonials-page.png
-
 │   ├── Contact-page.png
-
 │   └── Appointment-page.png
-│
-├── index.html
-
-├── About.html
-
-├── Services.html
-
-├── Doctors.html
-
-├── Testimonials.html
-
-├── Contact.html
-
-├── Appointment.html
-
-└── README.md
 
 ## 📱 Responsive Design
 
