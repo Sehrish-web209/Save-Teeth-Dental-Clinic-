@@ -131,12 +131,42 @@
 <a class="font-label-md text-label-md text-on-surface-variant pb-1 hover:text-primary transition-colors" href="Testimonials.html">Testimonials</a>
 <a class="font-label-md text-label-md text-on-surface-variant pb-1 hover:text-primary transition-colors" href="Contact.html">Contact</a>
 </nav>
-<a href="appointment.html"
-   class="inline-block bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md hover:opacity-90 active:scale-95 transition-all">
+<!-- Mobile Menu Button -->
+<button id="menu-btn"
+    class="md:hidden text-primary">
+    <span class="material-symbols-outlined text-4xl">
+        menu
+    </span>
+</button>
+
+<a href="Appointment.html"
+   class="hidden md:inline-block bg-primary text-on-primary px-6 py-2.5 rounded-lg font-label-md text-label-md hover:opacity-90 active:scale-95 transition-all shadow-md">
     Book Appointment
 </a>
 </div>
 </header>
+<!-- Mobile Navigation -->
+<div id="mobile-menu"
+    class="hidden fixed top-[72px] left-0 w-full bg-white shadow-lg z-40 md:hidden">
+
+    <a href="index.html" class="block px-6 py-4 border-b">Home</a>
+
+    <a href="About.html" class="block px-6 py-4 border-b">About</a>
+
+    <a href="Services.html" class="block px-6 py-4 border-b">Services</a>
+
+    <a href="Doctors.html" class="block px-6 py-4 border-b">Doctors</a>
+
+    <a href="Testimonials.html" class="block px-6 py-4 border-b">Testimonials</a>
+
+    <a href="Contact.html" class="block px-6 py-4 border-b">Contact</a>
+
+    <a href="Appointment.html"
+        class="block px-6 py-4 bg-primary text-white text-center">
+        Book Appointment
+    </a>
+
+</div>
 <main class="pt-[120px] pb-xl px-gutter max-w-[1280px] mx-auto min-h-screen">
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-lg">
 <!-- Hero & Title Section -->
@@ -320,6 +350,13 @@
             el.addEventListener('blur', () => {
                 el.parentElement.querySelector('label').classList.remove('text-secondary');
             });
+        });
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
         });
     </script>
 </body></html>
