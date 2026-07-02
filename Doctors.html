@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Our Specialists | DentalPro Clinic</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed": "#001a42",
+                    "outline": "#727780",
+                    "on-tertiary-fixed": "#00201c",
+                    "primary": "#003358",
+                    "inverse-surface": "#2e3132",
+                    "secondary": "#0058be",
+                    "on-secondary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "inverse-primary": "#9ccaff",
+                    "surface-tint": "#296195",
+                    "surface": "#f8f9fb",
+                    "on-background": "#191c1e",
+                    "inverse-on-surface": "#f0f1f3",
+                    "outline-variant": "#c1c7d0",
+                    "secondary-container": "#2170e4",
+                    "primary-container": "#004a7c",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-container": "#87baf3",
+                    "on-secondary-fixed-variant": "#004395",
+                    "on-primary-fixed-variant": "#00497b",
+                    "surface-container-high": "#e7e8ea",
+                    "background": "#f8f9fb",
+                    "surface-container": "#edeef0",
+                    "primary-fixed": "#d0e4ff",
+                    "on-primary-fixed": "#001d35",
+                    "surface-container-highest": "#e1e2e4",
+                    "on-secondary-container": "#fefcff",
+                    "surface-dim": "#d9dadc",
+                    "error-container": "#ffdad6",
+                    "on-surface-variant": "#42474f",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#005047",
+                    "surface-container-low": "#f3f4f6",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary": "#003831",
+                    "primary-fixed-dim": "#9ccaff",
+                    "secondary-fixed": "#d8e2ff",
+                    "surface-variant": "#e1e2e4",
+                    "surface-bright": "#f8f9fb",
+                    "tertiary-fixed": "#62fae3",
+                    "tertiary-fixed-dim": "#3cddc7",
+                    "on-surface": "#191c1e",
+                    "secondary-fixed-dim": "#adc6ff",
+                    "tertiary-container": "#005148",
+                    "on-tertiary-container": "#1accb7",
+                    "on-error": "#ffffff",
+                    "on-error-container": "#93000a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xl": "80px",
+                    "base": "8px",
+                    "lg": "48px",
+                    "sm": "12px",
+                    "xs": "4px",
+                    "gutter": "24px",
+                    "margin": "32px",
+                    "md": "24px"
+            },
+            "fontFamily": {
+                    "headline-sm": ["Inter"],
+                    "label-md": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "display-lg-mobile": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "display-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 24px rgba(0, 51, 88, 0.08);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #003358 0%, #1accb7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .vibrant-gradient-icon {
+            background: linear-gradient(135deg, #1accb7 0%, #2170e4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-primary-fixed">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl border-b border-white/20 shadow-[0_8px_24px_rgba(0,51,88,0.08)]"><div class="flex justify-between items-center px-gutter py-4 max-w-[1280px] mx-auto">
+<a class="font-headline-md text-headline-md font-bold text-primary tracking-tight" href="index.html">Save Teeth Dental Clinic</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md text-on-surface-variant pb-1 hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant pb-1 hover:text-primary transition-colors" href="About.html">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant pb-1 hover:text-primary transition-colors" href="Services.html">Services</a>
+<a class="font-label-md text-label-md text-primary border-b-2 border-primary pb-1" href="#">Doctors</a>
+<a class="font-label-md text-label-md text-on-surface-variant pb-1 hover:text-primary transition-colors" href="Testimonials.html">Testimonials</a>
+<a class="font-label-md text-label-md text-on-surface-variant pb-1 hover:text-primary transition-colors" href="Contact.html">Contact</a>
+</nav>
+<a href="Appointment.html"
+   class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-label-md text-label-md hover:opacity-90 active:scale-95 transition-all shadow-md">
+    Book Appointment
+</a>
+</div></header>
+<main class="pt-32 pb-xl">
+<!-- Hero Section -->
+<section class="max-w-[1280px] mx-auto px-gutter mb-xl">
+<div class="text-center max-w-3xl mx-auto">
+<span class="inline-block px-4 py-1 bg-secondary-fixed text-primary rounded-full font-label-sm mb-4">World-Class Specialists</span>
+<h1 class="font-display-lg text-display-lg mb-6 tracking-tight text-primary text-display-lg-mobile md:text-display-lg">Precision Care from Expert <span class="gradient-text">Hands</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Our team of internationally recognized dental experts combines clinical excellence with a compassionate touch to provide the highest standard of dental care.</p>
+</div>
+</section>
+<!-- Doctors Grid (Bento/Asymmetric) -->
+<section class="max-w-[1280px] mx-auto px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Lead Doctor (Featured Card) -->
+<div class="md:col-span-12 group relative overflow-hidden rounded-xl glass-card transition-all duration-500 hover:shadow-xl shadow-[0_8px_24px_rgba(0,51,88,0.08)]"><div class="flex flex-col md:flex-row h-full"><div class="md:w-1/2 h-80 md:h-auto relative overflow-hidden bg-surface-container-low"><img alt="Dr. Touqeer" class="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105" src="./assets/Dr. Touqeer.jpeg"/></div><div class="p-md flex flex-col justify-center md:w-1/2"><div class="mb-4"><span class="text-on-tertiary-container font-label-sm bg-tertiary-fixed-dim/20 px-3 py-1 rounded-full">Lead Dentist</span></div><h2 class="font-headline-md text-headline-md text-primary mb-2 tracking-tight">Dr. Touqeer</h2><p class="font-label-md text-label-md text-secondary mb-4 uppercase tracking-widest">General &amp; Restorative Dentistry</p><p class="text-on-surface-variant mb-6">Experienced dental professional. Provides quality patient care. Skilled in modern dental treatments. Committed to patient comfort and professional dental care.</p><div class="flex flex-wrap gap-2 mb-8"><span class="bg-surface-container-low px-3 py-1 rounded-lg text-label-sm">BDS, MDS</span><span class="bg-surface-container-low px-3 py-1 rounded-lg text-label-sm">Senior Consultant</span></div></div></div></div>
+<!-- Doctor 2 (Side Card) -->
+<div class="md:col-span-12 group relative overflow-hidden rounded-xl glass-card transition-all duration-500 hover:shadow-xl shadow-[0_8px_24px_rgba(0,51,88,0.08)]"><div class="flex flex-col md:flex-row-reverse h-full"><div class="md:w-1/2 h-80 md:h-auto relative overflow-hidden bg-surface-container-low"><img alt="Consultant Dentist" class="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105" src="./assets/Consultant Dentist.jpeg"/></div><div class="p-md flex flex-col justify-center md:w-1/2"><div class="mb-4"><span class="text-on-tertiary-container font-label-sm bg-tertiary-fixed-dim/20 px-3 py-1 rounded-full">Consultant Dentist</span></div><h2 class="font-headline-md text-headline-md text-primary mb-2 tracking-tight">Consultant Dentist</h2><p class="font-label-md text-label-md text-secondary mb-4 uppercase tracking-widest">Clinical Dental Procedures</p><p class="text-on-surface-variant mb-6">Handles patient treatment with care. Experienced in clinical dental procedures. Focused on patient wellbeing, comfort, and safety.</p><div class="flex flex-wrap gap-2 mb-8"><span class="bg-surface-container-low px-3 py-1 rounded-lg text-label-sm">BDS, FCPS</span><span class="bg-surface-container-low px-3 py-1 rounded-lg text-label-sm">Specialist</span></div></div></div></div>
+<!-- Doctor 3 (Bottom Left) -->
+<div class="md:col-span-4 group glass-card rounded-xl p-md transition-all duration-500 hover:-translate-y-2 border-outline-variant"><div class="w-16 h-16 mb-6 overflow-hidden rounded-lg"><img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLtMGZdYg6wcn6zzfGO06FlhfbW8dKeV-VmrmwOGfOcSkJZmiQg1FY8GbSqlJNtCKziy1M7QugJKUHoqozPWUlwHbdAvdz9PGbWaHUDP01m9hjxdZ5cgFycYGaVVoVqX_z2ivwQEZwLy8lB_EfBeOPONy9KNuXfdxaiNNLHdxhxrAup6OzDAsnNQ089l46DXYZjHuJ0t4HWFhgFz2R8tQPiEgg2U6QRdVvIZ7pjNXLwOq-IHYqCU_y05ezo" style="object-position: 0 0; transform: scale(4); transform-origin: 0 0;"/></div><h3 class="font-headline-sm text-headline-sm text-primary mb-4">Professional Dental Support Team</h3><p class="text-on-surface-variant text-sm">Trained and trusted dental support staff. Assists dentists during patient care and treatment procedures. Maintains a safe, hygienic, and professional clinical environment.</p></div>
+<!-- Doctor 4 (Bottom Middle) -->
+<div class="md:col-span-4 group glass-card rounded-xl p-md transition-all duration-500 hover:-translate-y-2 border-outline-variant"><div class="w-16 h-16 mb-6 overflow-hidden rounded-lg"><img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLtMGZdYg6wcn6zzfGO06FlhfbW8dKeV-VmrmwOGfOcSkJZmiQg1FY8GbSqlJNtCKziy1M7QugJKUHoqozPWUlwHbdAvdz9PGbWaHUDP01m9hjxdZ5cgFycYGaVVoVqX_z2ivwQEZwLy8lB_EfBeOPONy9KNuXfdxaiNNLHdxhxrAup6OzDAsnNQ089l46DXYZjHuJ0t4HWFhgFz2R8tQPiEgg2U6QRdVvIZ7pjNXLwOq-IHYqCU_y05ezo" style="object-position: 0 50%; transform: scale(4); transform-origin: 0 50%;"/></div><h3 class="font-headline-sm text-headline-sm text-primary mb-4">Nursing &amp; Assistance Team</h3><p class="text-on-surface-variant text-sm">Dedicated nursing and assistance staff. Helpful, trained, and caring team members supporting patients throughout their treatment journey.</p></div>
+<!-- Stats / Experience Card (Bottom Right Bento) -->
+<div class="md:col-span-4 group glass-card rounded-xl p-md transition-all duration-500 hover:-translate-y-2 border-outline-variant"><div class="w-16 h-16 mb-6 overflow-hidden rounded-lg"><img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLtMGZdYg6wcn6zzfGO06FlhfbW8dKeV-VmrmwOGfOcSkJZmiQg1FY8GbSqlJNtCKziy1M7QugJKUHoqozPWUlwHbdAvdz9PGbWaHUDP01m9hjxdZ5cgFycYGaVVoVqX_z2ivwQEZwLy8lB_EfBeOPONy9KNuXfdxaiNNLHdxhxrAup6OzDAsnNQ089l46DXYZjHuJ0t4HWFhgFz2R8tQPiEgg2U6QRdVvIZ7pjNXLwOq-IHYqCU_y05ezo" style="object-position: 50% 0; transform: scale(4); transform-origin: 50% 0;"/></div><h3 class="font-headline-sm text-headline-sm text-primary mb-4">Clinic Team Commitment</h3><p class="text-on-surface-variant text-sm">Committed to quality dental treatment. Experienced team working together for the best patient care in a safe, comfortable, and welcoming environment.</p></div>
+</div>
+</section>
+<!-- Technology & Philosophy -->
+<section class="max-w-[1280px] mx-auto px-gutter mt-xl grid md:grid-cols-2 gap-xl items-center">
+<div class="relative">
+<div class="absolute -top-10 -left-10 w-40 h-40 bg-tertiary-fixed-dim/20 rounded-full blur-3xl"></div>
+<img alt="Clinical dental scan" class="rounded-xl shadow-2xl relative z-10 w-full h-full object-contain bg-surface-container-low" src="./assets/Microscopic precision.jpeg"/>
+</div>
+<div>
+<h2 class="font-display-lg text-display-lg text-primary mb-6 text-display-lg-mobile md:text-display-lg">Consultant Dentist</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">We believe that the best clinical outcomes are achieved when master specialists are empowered by the latest diagnostic and surgical technologies.</p>
+<div class="space-y-4">
+<div class="flex gap-4 items-start">
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">biotech</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary">Microscopic Precision</h4>
+<p class="text-on-surface-variant">Enhanced visualization for unmatched accuracy in every procedure.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-tertiary">3d_rotation</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary">3D Digital Workflow</h4>
+<p class="text-on-surface-variant">Digital impressions and surgical guides for predictable success.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="border-t border-outline-variant w-full bg-primary" style="background-color: #004a7c;">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-gutter py-xl max-w-[1280px] mx-auto">
+<div><div class="space-y-6"><div class="font-headline-sm text-headline-sm font-bold text-primary-fixed-dim">Save Teeth Dental Clinic</div><p class="font-body-md text-body-md text-surface-variant">Providing premium dental care with compassion and technical excellence since 2009.</p><div class="flex gap-4"><a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px] text-primary-fixed-dim">public</span></a><a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px] text-primary-fixed-dim">mail</span></a><a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px] text-primary-fixed-dim">phone</span></a></div></div></div>
+<div><h4 class="font-label-md text-label-md text-primary-fixed-dim uppercase tracking-wider">Quick Links</h4><ul class="space-y-4"><li><a class="font-body-md text-surface-variant hover:translate-x-1 transition-transform block" href="#">Home</a></li><li><a class="font-body-md text-surface-variant hover:translate-x-1 transition-transform block" href="#">About Us</a></li><li><a class="font-body-md text-surface-variant hover:translate-x-1 transition-transform block" href="#">Doctors</a></li><li><a class="font-body-md text-surface-variant hover:translate-x-1 transition-transform block" href="#">Bookings</a></li></ul></div>
+<div><h4 class="font-label-md text-label-md text-primary-fixed-dim uppercase tracking-wider">Services</h4><ul class="space-y-4"><li><a class="font-body-md text-surface-variant hover:translate-x-1 transition-transform block" href="#">General Dentistry</a></li><li><a class="font-body-md text-surface-variant hover:translate-x-1 transition-transform block" href="#">Cosmetic Surgery</a></li><li><a class="font-body-md text-surface-variant hover:translate-x-1 transition-transform block" href="#">Orthodontics</a></li><li><a class="font-body-md text-surface-variant hover:translate-x-1 transition-transform block" href="#">Implants</a></li></ul></div>
+<div><h4 class="font-label-md text-label-md text-primary-fixed-dim uppercase tracking-wider">Contact Info</h4><ul class="space-y-4"><li class="flex items-start gap-3 text-surface-variant"><span class="material-symbols-outlined text-primary-fixed-dim">location_on</span> Iqbal Plaza, N-35, Kehal, Abbottabad</li><li class="flex items-center gap-3 text-surface-variant"><span class="material-symbols-outlined text-primary-fixed-dim">call</span> +1 (555) 000-1234</li><li class="flex items-center gap-3 text-surface-variant"><span class="material-symbols-outlined text-primary-fixed-dim">schedule</span> Mon - Sat: 9am - 7pm</li></ul></div>
+</div>
+<div class="border-t border-outline-variant py-8 px-gutter text-center">
+<p class="text-label-sm text-white">© 2024 Save Teeth Dental Clinic. All rights reserved.</p>
+</div>
+</footer>
+<script>
+        // Micro-interactions for buttons and cards
+        document.querySelectorAll('button, .glass-card').forEach(el => {
+            el.addEventListener('mousedown', () => {
+                el.style.transform = 'scale(0.98)';
+            });
+            el.addEventListener('mouseup', () => {
+                el.style.transform = '';
+            });
+            el.addEventListener('mouseleave', () => {
+                el.style.transform = '';
+            });
+        });
+
+        // Simple scroll reveal
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div').forEach(el => {
+            el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+</body></html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Clinical Services</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed": "#001a42",
+                        "outline": "#727780",
+                        "on-tertiary-fixed": "#00201c",
+                        "primary": "#003358",
+                        "inverse-surface": "#2e3132",
+                        "secondary": "#0058be",
+                        "on-secondary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "inverse-primary": "#9ccaff",
+                        "surface-tint": "#296195",
+                        "surface": "#f8f9fb",
+                        "on-background": "#191c1e",
+                        "inverse-on-surface": "#f0f1f3",
+                        "outline-variant": "#c1c7d0",
+                        "secondary-container": "#2170e4",
+                        "primary-container": "#004a7c",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-container": "#87baf3",
+                        "on-secondary-fixed-variant": "#004395",
+                        "on-primary-fixed-variant": "#00497b",
+                        "surface-container-high": "#e7e8ea",
+                        "background": "#f8f9fb",
+                        "surface-container": "#edeef0",
+                        "primary-fixed": "#d0e4ff",
+                        "on-primary-fixed": "#001d35",
+                        "surface-container-highest": "#e1e2e4",
+                        "on-secondary-container": "#fefcff",
+                        "surface-dim": "#d9dadc",
+                        "error-container": "#ffdad6",
+                        "on-surface-variant": "#42474f",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#005047",
+                        "surface-container-low": "#f3f4f6",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#003831",
+                        "primary-fixed-dim": "#9ccaff",
+                        "secondary-fixed": "#d8e2ff",
+                        "surface-variant": "#e1e2e4",
+                        "surface-bright": "#f8f9fb",
+                        "tertiary-fixed": "#62fae3",
+                        "tertiary-fixed-dim": "#3cddc7",
+                        "on-surface": "#191c1e",
+                        "secondary-fixed-dim": "#adc6ff",
+                        "tertiary-container": "#005148",
+                        "on-tertiary-container": "#1accb7",
+                        "on-error": "#ffffff",
+                        "on-error-container": "#93000a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xl": "80px",
+                        "base": "8px",
+                        "lg": "48px",
+                        "sm": "12px",
+                        "xs": "4px",
+                        "gutter": "24px",
+                        "margin": "32px",
+                        "md": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-sm": ["Inter"],
+                        "label-md": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "display-lg-mobile": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "display-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(0, 51, 88, 0.08);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 12px 40px 0 rgba(0, 88, 190, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .active-nav {
+            color: #003358;
+            border-bottom: 2px solid #003358;
+            padding-bottom: 4px;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl border-b border-white/20 shadow-[0_8px_24px_rgba(0,51,88,0.08)]">
+<nav class="flex justify-between items-center px-gutter py-4 max-w-[1280px] mx-auto">
+<!-- Brand Identity -->
+<div class="flex items-center gap-2 group cursor-pointer">
+<a class="font-headline-md text-headline-md font-extrabold text-primary tracking-tight" href="index.html">SAVE TEETH DENTAL CLINIC</a>
+</div>
+<!-- Navigation Links (Centered) -->
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="About.html">About</a>
+<a class="font-label-md text-label-md text-primary border-b-2 border-primary pb-1" href="Services.html">Services</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="Doctors.html">Doctors</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="Testimonials.html">Testimonials</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="contact.html">Contact</a>
+</div>
+<!-- Trailing Action -->
+<a href="Appointment.html"
+   class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-label-md text-label-md hover:opacity-90 active:scale-95 transition-all shadow-md">
+    Book Appointment
+</a>
+</nav>
+</header>
+<main class="pt-[120px] pb-xl">
+<!-- Hero Section -->
+<section class="max-w-[1280px] mx-auto px-gutter mb-xl relative">
+<div class="absolute top-0 right-0 -z-10 opacity-10">
+<span class="material-symbols-outlined text-[300px] text-primary select-none" style="font-variation-settings: 'wght' 100;">health_and_safety</span>
+</div>
+<div class="max-w-2xl text-center md:text-left">
+<span class="inline-block px-4 py-1.5 rounded-full text-on-primary-fixed font-label-sm text-label-sm mb-4 uppercase tracking-widest mx-auto md:mx-0 bg-primary-fixed-dim">Clinical Excellence</span>
+<h1 class="font-display-lg text-display-lg text-primary mb-6">Expert Dental Care for Every Smile</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                    We offer a comprehensive range of dental treatments using state-of-the-art technology and clinical precision. Explore our specialized services designed for your long-term health.
+                </p>
+</div>
+</section>
+<!-- Services Bento Grid -->
+<section class="max-w-[1280px] mx-auto px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"><!-- Service Card 1 -->
+<div class="glass-card p-8 rounded-2xl flex flex-col items-start gap-4 h-full bg-white/70 border border-outline-variant/20 shadow-sm hover:shadow-xl transition-all duration-300 group bg-primary/5" style="background-color: rgba(0, 51, 88, 0.05);">
+<div class="w-16 h-16 rounded-2xl bg-primary/5 flex items-center justify-center mb-4 transition-colors group-hover:bg-primary/10"><span class="material-symbols-outlined text-primary text-4xl">clinical_notes</span></div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Comprehensive Dental Examinations</h3>
+<p class="text-on-surface-variant text-body-md">Thorough assessment of your oral health using advanced diagnostic tools and clinical expertise.</p>
+<a class="mt-auto text-primary font-label-md flex items-center gap-1 hover:gap-2 transition-all group-hover:text-secondary" href="#">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- Service Card 2 -->
+<div class="glass-card p-8 rounded-2xl flex flex-col items-start gap-4 h-full bg-white/70 border border-outline-variant/20 shadow-sm hover:shadow-xl transition-all duration-300 group bg-secondary/5" style="background-color: rgba(0, 88, 190, 0.05);">
+<div class="w-16 h-16 rounded-2xl bg-primary/5 flex items-center justify-center mb-4 transition-colors group-hover:bg-primary/10"><span class="material-symbols-outlined text-secondary text-4xl">radiology</span></div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Dental X-Rays</h3>
+<p class="text-on-surface-variant text-body-md">High-resolution digital imaging to detect underlying issues not visible during a standard exam.</p>
+<a class="mt-auto text-primary font-label-md flex items-center gap-1 hover:gap-2 transition-all group-hover:text-secondary" href="#">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- Service Card 3 -->
+<div class="glass-card p-8 rounded-2xl flex flex-col items-start gap-4 h-full bg-white/70 border border-outline-variant/20 shadow-sm hover:shadow-xl transition-all duration-300 group bg-tertiary/5" style="background-color: rgba(0, 81, 72, 0.05);">
+<div class="w-16 h-16 rounded-2xl bg-primary/5 flex items-center justify-center mb-4 transition-colors group-hover:bg-primary/10"><span class="material-symbols-outlined text-tertiary text-4xl">dentistry</span></div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Oral Prophylaxis</h3>
+<p class="text-on-surface-variant text-body-md">Professional scaling and polishing to remove plaque and tartar for optimal gum health.</p>
+<a class="mt-auto text-primary font-label-md flex items-center gap-1 hover:gap-2 transition-all group-hover:text-secondary" href="#">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- Service Card 4 -->
+<div class="glass-card p-8 rounded-2xl flex flex-col items-start gap-4 h-full bg-white/70 border border-outline-variant/20 shadow-sm hover:shadow-xl transition-all duration-300 group bg-primary/5" style="background-color: rgba(0, 51, 88, 0.05);">
+<div class="w-16 h-16 rounded-2xl bg-primary/5 flex items-center justify-center mb-4 transition-colors group-hover:bg-primary/10"><span class="material-symbols-outlined text-primary text-4xl">vaccines</span></div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Topical Fluoride Application</h3>
+<p class="text-on-surface-variant text-body-md">Strengthening tooth enamel and preventing decay with professional-grade fluoride treatments.</p>
+<a class="mt-auto text-primary font-label-md flex items-center gap-1 hover:gap-2 transition-all group-hover:text-secondary" href="#">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- Service Card 5 -->
+<div class="glass-card p-8 rounded-2xl flex flex-col items-start gap-4 h-full bg-white/70 border border-outline-variant/20 shadow-sm hover:shadow-xl transition-all duration-300 group bg-secondary/5" style="background-color: rgba(0, 88, 190, 0.05);">
+<div class="w-16 h-16 rounded-2xl bg-primary/5 flex items-center justify-center mb-4 transition-colors group-hover:bg-primary/10"><span class="material-symbols-outlined text-secondary text-4xl">shield</span></div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Pits &amp; Fissure Sealants</h3>
+<p class="text-on-surface-variant text-body-md">Protective coatings for molars to prevent cavities in deep grooves and hard-to-reach areas.</p>
+<a class="mt-auto text-primary font-label-md flex items-center gap-1 hover:gap-2 transition-all group-hover:text-secondary" href="#">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- Service Card 6 -->
+<div class="glass-card p-8 rounded-2xl flex flex-col items-start gap-4 h-full bg-white/70 border border-outline-variant/20 shadow-sm hover:shadow-xl transition-all duration-300 group bg-tertiary/5" style="background-color: rgba(0, 81, 72, 0.05);">
+<div class="w-16 h-16 rounded-2xl bg-primary/5 flex items-center justify-center mb-4 transition-colors group-hover:bg-primary/10"><span class="material-symbols-outlined text-tertiary text-4xl">pulmonology</span></div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Root Canal Treatment (RCT)</h3>
+<p class="text-on-surface-variant text-body-md">Expert endodontic care to save infected teeth and eliminate pain with precision techniques.</p>
+<a class="mt-auto text-primary font-label-md flex items-center gap-1 hover:gap-2 transition-all group-hover:text-secondary" href="#">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- Service Card 7 -->
+<div class="glass-card p-8 rounded-2xl flex flex-col items-start gap-4 h-full bg-white/70 border border-outline-variant/20 shadow-sm hover:shadow-xl transition-all duration-300 group bg-primary/5" style="background-color: rgba(0, 51, 88, 0.05);">
+<div class="w-16 h-16 rounded-2xl bg-primary/5 flex items-center justify-center mb-4 transition-colors group-hover:bg-primary/10"><span class="material-symbols-outlined text-primary text-4xl">edit_square</span></div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Tooth Fillings / Restorations</h3>
+<p class="text-on-surface-variant text-body-md">Aesthetic composite restorations that blend perfectly with your natural tooth structure.</p>
+<a class="mt-auto text-primary font-label-md flex items-center gap-1 hover:gap-2 transition-all group-hover:text-secondary" href="#">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- Service Card 8 -->
+<div class="glass-card p-8 rounded-2xl flex flex-col items-start gap-4 h-full bg-white/70 border border-outline-variant/20 shadow-sm hover:shadow-xl transition-all duration-300 group bg-secondary/5" style="background-color: rgba(0, 88, 190, 0.05);">
+<div class="w-16 h-16 rounded-2xl bg-primary/5 flex items-center justify-center mb-4 transition-colors group-hover:bg-primary/10"><span class="material-symbols-outlined text-secondary text-4xl">health_metrics</span></div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Periodontitis Treatment</h3>
+<p class="text-on-surface-variant text-body-md">Advanced gum disease management to protect the supporting tissues of your teeth.</p>
+<a class="mt-auto text-primary font-label-md flex items-center gap-1 hover:gap-2 transition-all group-hover:text-secondary" href="#">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- Service Card 9 -->
+<div class="glass-card p-8 rounded-2xl flex flex-col items-start gap-4 h-full bg-white/70 border border-outline-variant/20 shadow-sm hover:shadow-xl transition-all duration-300 group bg-tertiary/5" style="background-color: rgba(0, 81, 72, 0.05);">
+<div class="w-16 h-16 rounded-2xl bg-primary/5 flex items-center justify-center mb-4 transition-colors group-hover:bg-primary/10"><span class="material-symbols-outlined text-tertiary text-4xl">precision_manufacturing</span></div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Dental Implants</h3>
+<p class="text-on-surface-variant text-body-md">Permanent, biocompatible solutions for missing teeth that look and feel completely natural.</p>
+<a class="mt-auto text-primary font-label-md flex items-center gap-1 hover:gap-2 transition-all group-hover:text-secondary" href="#">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- Service Card 10 -->
+<div class="glass-card p-8 rounded-2xl flex flex-col items-start gap-4 h-full bg-white/70 border border-outline-variant/20 shadow-sm hover:shadow-xl transition-all duration-300 group bg-primary/5" style="background-color: rgba(0, 51, 88, 0.05);">
+<div class="w-16 h-16 rounded-2xl bg-primary/5 flex items-center justify-center mb-4 transition-colors group-hover:bg-primary/10"><span class="material-symbols-outlined text-primary text-4xl">face_6</span></div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Complete Dentures</h3>
+<p class="text-on-surface-variant text-body-md">Full-arch restorations designed for comfort, stability, and a natural aesthetic appearance.</p>
+<a class="mt-auto text-primary font-label-md flex items-center gap-1 hover:gap-2 transition-all group-hover:text-secondary" href="#">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- Service Card 11 -->
+<div class="glass-card p-8 rounded-2xl flex flex-col items-start gap-4 h-full bg-white/70 border border-outline-variant/20 shadow-sm hover:shadow-xl transition-all duration-300 group bg-secondary/5" style="background-color: rgba(0, 88, 190, 0.05);">
+<div class="w-16 h-16 rounded-2xl bg-primary/5 flex items-center justify-center mb-4 transition-colors group-hover:bg-primary/10"><span class="material-symbols-outlined text-secondary text-4xl">grid_view</span></div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Partial Dentures</h3>
+<p class="text-on-surface-variant text-body-md">Custom-fitted removable appliances to replace multiple missing teeth and restore function.</p>
+<a class="mt-auto text-primary font-label-md flex items-center gap-1 hover:gap-2 transition-all group-hover:text-secondary" href="#">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- Service Card 12 -->
+<div class="glass-card p-8 rounded-2xl flex flex-col items-start gap-4 h-full bg-white/70 border border-outline-variant/20 shadow-sm hover:shadow-xl transition-all duration-300 group bg-tertiary/5" style="background-color: rgba(0, 81, 72, 0.05);">
+<div class="w-16 h-16 rounded-2xl bg-primary/5 flex items-center justify-center mb-4 transition-colors group-hover:bg-primary/10"><span class="material-symbols-outlined text-tertiary text-4xl">architecture</span></div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Crowns &amp; Bridges</h3>
+<p class="text-on-surface-variant text-body-md">Durable fixed prosthetics to strengthen damaged teeth or bridge gaps in your smile.</p>
+<a class="mt-auto text-primary font-label-md flex items-center gap-1 hover:gap-2 transition-all group-hover:text-secondary" href="#">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- Service Card 13 -->
+<div class="glass-card p-8 rounded-2xl flex flex-col items-start gap-4 h-full bg-white/70 border border-outline-variant/20 shadow-sm hover:shadow-xl transition-all duration-300 group bg-primary/5" style="background-color: rgba(0, 51, 88, 0.05);">
+<div class="w-16 h-16 rounded-2xl bg-primary/5 flex items-center justify-center mb-4 transition-colors group-hover:bg-primary/10"><span class="material-symbols-outlined text-primary text-4xl">align_items_stretch</span></div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Orthodontic Treatment</h3>
+<p class="text-on-surface-variant text-body-md">Comprehensive alignment solutions including traditional braces for all age groups.</p>
+<a class="mt-auto text-primary font-label-md flex items-center gap-1 hover:gap-2 transition-all group-hover:text-secondary" href="#">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- Service Card 14 -->
+<div class="glass-card p-8 rounded-2xl flex flex-col items-start gap-4 h-full bg-white/70 border border-outline-variant/20 shadow-sm hover:shadow-xl transition-all duration-300 group bg-secondary/5" style="background-color: rgba(0, 88, 190, 0.05);">
+<div class="w-16 h-16 rounded-2xl bg-primary/5 flex items-center justify-center mb-4 transition-colors group-hover:bg-primary/10"><span class="material-symbols-outlined text-secondary text-4xl">auto_awesome</span></div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Teeth Whitening</h3>
+<p class="text-on-surface-variant text-body-md">Professional bleaching treatments for a significantly brighter and more confident smile.</p>
+<a class="mt-auto text-primary font-label-md flex items-center gap-1 hover:gap-2 transition-all group-hover:text-secondary" href="#">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- Service Card 15 -->
+<div class="glass-card p-8 rounded-2xl flex flex-col items-start gap-4 h-full bg-white/70 border border-outline-variant/20 shadow-sm hover:shadow-xl transition-all duration-300 group bg-tertiary/5" style="background-color: rgba(0, 81, 72, 0.05);">
+<div class="w-16 h-16 rounded-2xl bg-primary/5 flex items-center justify-center mb-4 transition-colors group-hover:bg-primary/10"><span class="material-symbols-outlined text-tertiary text-4xl">layers</span></div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Veneers</h3>
+<p class="text-on-surface-variant text-body-md">Ultra-thin cosmetic shells to transform the shape, color, and alignment of your teeth.</p>
+<a class="mt-auto text-primary font-label-md flex items-center gap-1 hover:gap-2 transition-all group-hover:text-secondary" href="#">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- Service Card 16 -->
+<div class="glass-card p-8 rounded-2xl flex flex-col items-start gap-4 h-full bg-white/70 border border-outline-variant/20 shadow-sm hover:shadow-xl transition-all duration-300 group bg-primary/5" style="background-color: rgba(0, 51, 88, 0.05);">
+<div class="w-16 h-16 rounded-2xl bg-primary/5 flex items-center justify-center mb-4 transition-colors group-hover:bg-primary/10"><span class="material-symbols-outlined text-primary text-4xl">diamond</span></div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Zirconia Restorations</h3>
+<p class="text-on-surface-variant text-body-md">Premium, metal-free crowns and bridges offering superior strength and lifelike aesthetics.</p>
+<a class="mt-auto text-primary font-label-md flex items-center gap-1 hover:gap-2 transition-all group-hover:text-secondary" href="#">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- Service Card 17 -->
+<div class="glass-card p-8 rounded-2xl flex flex-col items-start gap-4 h-full bg-white/70 border border-outline-variant/20 shadow-sm hover:shadow-xl transition-all duration-300 group bg-secondary/5" style="background-color: rgba(0, 88, 190, 0.05);">
+<div class="w-16 h-16 rounded-2xl bg-primary/5 flex items-center justify-center mb-4 transition-colors group-hover:bg-primary/10"><span class="material-symbols-outlined text-secondary text-4xl">face_retouching_natural</span></div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Cosmetic Tooth Alignment</h3>
+<p class="text-on-surface-variant text-body-md">Focused aesthetic corrections to improve the symmetry and appearance of your smile.</p>
+<a class="mt-auto text-primary font-label-md flex items-center gap-1 hover:gap-2 transition-all group-hover:text-secondary" href="#">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- Service Card 18 -->
+<div class="glass-card p-8 rounded-2xl flex flex-col items-start gap-4 h-full bg-white/70 border border-outline-variant/20 shadow-sm hover:shadow-xl transition-all duration-300 group bg-tertiary/5" style="background-color: rgba(0, 81, 72, 0.05);">
+<div class="w-16 h-16 rounded-2xl bg-primary/5 flex items-center justify-center mb-4 transition-colors group-hover:bg-primary/10"><span class="material-symbols-outlined text-tertiary text-4xl">medical_services</span></div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Oral Surgery</h3>
+<p class="text-on-surface-variant text-body-md">Specialized procedures including impacted wisdom tooth extractions with a focus on comfort.</p>
+<a class="mt-auto text-primary font-label-md flex items-center gap-1 hover:gap-2 transition-all group-hover:text-secondary" href="#">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div></div>
+</section>
+<!-- CTAs / Atmospheric Section -->
+<section class="py-8">
+<div class="max-w-[1280px] mx-auto px-gutter flex justify-center"><div class="grid grid-cols-2 gap-gutter w-full">
+<div class="overflow-hidden rounded-2xl shadow-xl aspect-video">
+<img alt="Clinical Procedure" class="w-full h-full object-cover block" src="./assets/service1.jpeg"/>
+</div>
+<div class="overflow-hidden rounded-2xl shadow-xl aspect-video">
+<img alt="Clinic Spotlight" class="w-full h-full object-cover block" src="./assets/Service2.jpeg"/>
+</div>
+</div></div>
+</section><section class="max-w-[1280px] mx-auto px-gutter mt-8">
+<div class="glass-card p-8 rounded-2xl flex flex-col items-start gap-4 h-full bg-white/70 border border-outline-variant/20 shadow-sm hover:shadow-xl transition-all duration-300 group">
+<div class="absolute inset-0 -z-10 opacity-5">
+<div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary-container/10 to-secondary-container/5"></div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center gap-lg">
+<div class="max-w-xl text-center md:text-left">
+<h2 class="font-display-lg text-display-lg text-primary mb-4">Ready for a Healthier Smile?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Schedule your initial consultation today and experience high-fidelity clinical dental care.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-4 w-full">
+<a href="Appointment.html" class="bg-primary text-on-primary px-8 py-4 rounded-xl font-headline-sm text-headline-sm shadow-xl hover:scale-105 transition-transform active:scale-95">
+                            Book Online
+                        </a>
+<a href="Services.html" class="border-2 border-secondary text-secondary px-8 py-4 rounded-xl font-headline-sm text-headline-sm hover:bg-secondary/5 transition-colors">
+                            View Pricing
+                        </a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full dark:bg-on-background border-t border-outline-variant/20 bg-primary text-on-primary" style="background-color: #004a7c;">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-gutter py-xl max-w-[1280px] mx-auto">
+<!-- Brand & Info -->
+<div class="space-y-4">
+<span class="font-headline-sm text-headline-sm font-bold dark:text-inverse-primary text-primary-fixed-dim">SAVE TEETH DENTAL CLINIC</span>
+<p class="font-body-md text-body-md text-white">Elevating oral healthcare through precision, technology, and empathy. Your comfort is our priority.</p>
+</div>
+<!-- Quick Links -->
+<div class="space-y-4">
+<h4 class="font-label-md text-label-md uppercase tracking-wider text-primary-fixed-dim">Quick Links</h4>
+<ul class="space-y-2">
+<li><a class="hover:translate-x-1 transition-transform inline-block text-white" href="#">Home</a></li>
+<li><a class="hover:translate-x-1 transition-transform inline-block text-white" href="#">About Us</a></li>
+<li><a class="hover:translate-x-1 transition-transform inline-block text-white" href="#">Patient Forms</a></li>
+<li><a class="hover:translate-x-1 transition-transform inline-block text-white" href="#">Careers</a></li>
+</ul>
+</div>
+<!-- Services Links -->
+<div class="space-y-4">
+<h4 class="font-label-md text-label-md uppercase tracking-wider text-primary-fixed-dim">Services</h4>
+<ul class="space-y-2">
+<li><a class="hover:translate-x-1 transition-transform inline-block text-white" href="#">General Dentistry</a></li>
+<li><a class="hover:translate-x-1 transition-transform inline-block text-white" href="#">Orthodontics</a></li>
+<li><a class="hover:translate-x-1 transition-transform inline-block text-white" href="#">Cosmetic Dentistry</a></li>
+<li><a class="hover:translate-x-1 transition-transform inline-block text-white" href="#">Implants</a></li>
+</ul>
+</div>
+<!-- Contact Info -->
+<div class="space-y-4">
+<h4 class="font-label-md text-label-md uppercase tracking-wider text-primary-fixed-dim">Contact Us</h4>
+<ul class="space-y-2">
+<li class="flex items-center gap-2 text-white"><span class="material-symbols-outlined text-primary-fixed-dim">location_on</span> Iqbal Plaza, N-35, Kehal, Abbottabad, Pakistan</li>
+<li class="flex items-center gap-2 text-white"><span class="material-symbols-outlined text-primary-fixed-dim">call</span> 0322-9526258, 0318-5904700, 0320-8561100</li>
+<li class="flex items-center gap-2 text-white"><span class="material-symbols-outlined text-primary-fixed-dim">mail</span> nasirtouqeer451@gmail.com</li><li class="flex items-start gap-2 text-white"><span class="material-symbols-outlined text-primary-fixed-dim">schedule</span><div class="text-sm">Monday – Thursday: 8:00 AM – 8:00 PM<br/>Friday: 8:00 AM – 6:00 PM<br/>Saturday: 8:00 AM – 8:00 PM<br/>Sunday: Closed</div></li>
+</ul>
+</div>
+</div>
+<div class="max-w-[1280px] mx-auto px-gutter py-8 border-t border-outline-variant/30 text-center">
+<p class="font-label-sm text-label-sm opacity-70 text-white">© 2024 Save Teeth Dental Clinic. All rights reserved.</p>
+</div>
+</footer>
+<script>
+        // Micro-interaction for hover states on icons
+        document.querySelectorAll('.glass-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                const img = card.querySelector('img');
+                img.style.transform = 'rotate(3deg) scale(1.1)';
+                img.style.transition = 'transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+            });
+            card.addEventListener('mouseleave', () => {
+                const img = card.querySelector('img');
+                img.style.transform = 'rotate(0deg) scale(1)';
+            });
+        });
+
+        // Sticky Navbar subtle shrink effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('py-2');
+                header.classList.remove('py-4');
+            } else {
+                header.classList.add('py-4');
+                header.classList.remove('py-2');
+            }
+        });
+    </script>
+</body></html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Book Appointment | Save Teeth Dental Clinic</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed": "#001a42",
+                    "outline": "#727780",
+                    "on-tertiary-fixed": "#00201c",
+                    "primary": "#003358",
+                    "inverse-surface": "#2e3132",
+                    "secondary": "#0058be",
+                    "on-secondary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "inverse-primary": "#9ccaff",
+                    "surface-tint": "#296195",
+                    "surface": "#f8f9fb",
+                    "on-background": "#191c1e",
+                    "inverse-on-surface": "#f0f1f3",
+                    "outline-variant": "#c1c7d0",
+                    "secondary-container": "#2170e4",
+                    "primary-container": "#004a7c",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-container": "#87baf3",
+                    "on-secondary-fixed-variant": "#004395",
+                    "on-primary-fixed-variant": "#00497b",
+                    "surface-container-high": "#e7e8ea",
+                    "background": "#f8f9fb",
+                    "surface-container": "#edeef0",
+                    "primary-fixed": "#d0e4ff",
+                    "on-primary-fixed": "#001d35",
+                    "surface-container-highest": "#e1e2e4",
+                    "on-secondary-container": "#fefcff",
+                    "surface-dim": "#d9dadc",
+                    "error-container": "#ffdad6",
+                    "on-surface-variant": "#42474f",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#005047",
+                    "surface-container-low": "#f3f4f6",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary": "#003831",
+                    "primary-fixed-dim": "#9ccaff",
+                    "secondary-fixed": "#d8e2ff",
+                    "surface-variant": "#e1e2e4",
+                    "surface-bright": "#f8f9fb",
+                    "tertiary-fixed": "#62fae3",
+                    "tertiary-fixed-dim": "#3cddc7",
+                    "on-surface": "#191c1e",
+                    "secondary-fixed-dim": "#adc6ff",
+                    "tertiary-container": "#005148",
+                    "on-tertiary-container": "#1accb7",
+                    "on-error": "#ffffff",
+                    "on-error-container": "#93000a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xl": "80px",
+                    "base": "8px",
+                    "lg": "48px",
+                    "sm": "12px",
+                    "xs": "4px",
+                    "gutter": "24px",
+                    "margin": "32px",
+                    "md": "24px"
+            },
+            "fontFamily": {
+                    "headline-sm": ["Inter"],
+                    "label-md": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "display-lg-mobile": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "display-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .glass-card {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      .custom-shadow {
+        box-shadow: 0 8px 24px rgba(0, 51, 88, 0.08);
+      }
+      .input-focus-ring:focus {
+        border-color: #0058be;
+        box-shadow: 0 0 0 2px rgba(0, 88, 190, 0.1);
+        outline: none;
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-secondary/30">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl border-b border-white/20 shadow-[0_8px_24px_rgba(0,51,88,0.08)]">
+<div class="flex justify-between items-center px-gutter py-4 max-w-[1280px] mx-auto">
+<a class="font-headline-md text-headline-md font-bold text-primary tracking-tight" href="index.html">Save Teeth Dental Clinic</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md text-on-surface-variant pb-1 hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant pb-1 hover:text-primary transition-colors" href="About.html">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant pb-1 hover:text-primary transition-colors" href="Services.html">Services</a>
+<a class="font-label-md text-label-md text-on-surface-variant pb-1 hover:text-primary transition-colors" href="Doctors.html">Doctors</a>
+<a class="font-label-md text-label-md text-on-surface-variant pb-1 hover:text-primary transition-colors" href="Testimonials.html">Testimonials</a>
+<a class="font-label-md text-label-md text-on-surface-variant pb-1 hover:text-primary transition-colors" href="Contact.html">Contact</a>
+</nav>
+<a href="appointment.html"
+   class="inline-block bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md hover:opacity-90 active:scale-95 transition-all">
+    Book Appointment
+</a>
+</div>
+</header>
+<main class="pt-[120px] pb-xl px-gutter max-w-[1280px] mx-auto min-h-screen">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-lg">
+<!-- Hero & Title Section -->
+<div class="lg:col-span-12 mb-md text-center lg:text-left">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-xs">Schedule Your Visit</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Professional dental care tailored to your needs. Experience high-fidelity medical technology in a serene environment.</p>
+</div>
+<!-- Main Booking Form (Card-based) -->
+<div class="lg:col-span-8">
+<section class="glass-card rounded-xl p-md md:p-lg shadow-lg">
+<form class="grid grid-cols-1 md:grid-cols-2 gap-md" onsubmit="event.preventDefault(); alert('Appointment request sent!');">
+<!-- Full Name -->
+<div class="flex flex-col gap-xs md:col-span-2">
+<label class="font-label-md text-label-md text-primary" for="full_name">Full Name</label>
+<input class="bg-white border border-outline-variant rounded-lg p-3 text-on-surface input-focus-ring transition-all placeholder:text-outline focus:ring-2 focus:ring-secondary/20 border-outline-variant/30" id="full_name" name="full_name" placeholder="Johnathan Doe" required="" type="text"/>
+</div>
+<!-- Phone Number -->
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-primary" for="phone">Phone Number</label>
+<input class="bg-white border border-outline-variant rounded-lg p-3 text-on-surface input-focus-ring transition-all focus:ring-2 focus:ring-secondary/20 border-outline-variant/30" id="phone" name="phone" placeholder="+1 (555) 000-0000" required="" type="tel"/>
+</div>
+<!-- Email -->
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-primary" for="email">Email Address</label>
+<input class="bg-white border border-outline-variant rounded-lg p-3 text-on-surface input-focus-ring transition-all focus:ring-2 focus:ring-secondary/20 border-outline-variant/30" id="email" name="email" placeholder="john@example.com" required="" type="email"/>
+</div>
+<!-- Treatment Type -->
+<div class="flex flex-col gap-xs md:col-span-2">
+<label class="font-label-md text-label-md text-primary" for="treatment">Treatment Type</label>
+<select class="bg-white border border-outline-variant rounded-lg p-3 text-on-surface input-focus-ring transition-all appearance-none focus:ring-2 focus:ring-secondary/20 border-outline-variant/30" id="treatment" name="treatment" required="">
+<option disabled="" selected="" value="">Select a service</option>
+<option value="cleaning">Routine Checkup &amp; Cleaning</option>
+<option value="orthodontics">Orthodontic Consultation</option>
+<option value="whitening">Teeth Whitening</option>
+<option value="surgery">Oral Surgery</option>
+<option value="emergency">Emergency Dental Care</option>
+</select>
+</div>
+<!-- Preferred Date -->
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-primary" for="date">Preferred Date</label>
+<div class="relative">
+<input class="w-full bg-white border border-outline-variant rounded-lg p-3 text-on-surface input-focus-ring transition-all focus:ring-2 focus:ring-secondary/20 border-outline-variant/30" id="date" name="date" required="" type="date"/>
+</div>
+</div>
+<!-- Preferred Time -->
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-primary" for="time">Preferred Time</label>
+<input class="bg-white border border-outline-variant rounded-lg p-3 text-on-surface input-focus-ring transition-all focus:ring-2 focus:ring-secondary/20 border-outline-variant/30" id="time" name="time" required="" type="time"/>
+</div>
+<!-- Message -->
+<div class="flex flex-col gap-xs md:col-span-2">
+<label class="font-label-md text-label-md text-primary" for="message">Message (Optional)</label>
+<textarea class="bg-white border border-outline-variant rounded-lg p-3 text-on-surface input-focus-ring transition-all resize-none focus:ring-2 focus:ring-secondary/20 border-outline-variant/30" id="message" name="message" placeholder="Any specific concerns or questions?" rows="4"></textarea>
+</div>
+<!-- Submit -->
+<div class="md:col-span-2 pt-sm">
+<button class="w-full md:w-auto px-lg py-4 bg-primary text-white font-label-md rounded-lg hover:bg-secondary hover:shadow-lg transition-all active:scale-95 flex items-center justify-center gap-2 shadow-lg" type="submit">
+<span class="material-symbols-outlined text-[20px]">calendar_today</span>
+                                Confirm Booking
+                            </button>
+<p class="mt-4 text-label-sm text-outline text-center md:text-left">By submitting, you agree to our privacy policy and terms of service.</p>
+</div>
+</form>
+</section>
+</div>
+<!-- Side Section (Contact Details & Hours) -->
+<div class="lg:col-span-4 space-y-md">
+<!-- Clinical Aesthetics Image -->
+<div class="rounded-xl overflow-hidden h-48 mb-md shadow-lg">
+<img class="w-full h-full object-cover" data-alt="A macro photograph of a modern dental clinic interior with high-tech equipment and a serene atmosphere. Soft blue and white color palette, pristine clean surfaces, and warm ambient lighting. Professional and high-fidelity clinical environment that evokes trust and hygiene." src="./assets/interior.png"/>
+</div>
+<!-- Operating Hours -->
+<div class="glass-card rounded-xl p-md border-l-4 border-secondary shadow-lg">
+<div class="flex items-center gap-sm mb-sm text-secondary">
+<span class="material-symbols-outlined">schedule</span>
+<h3 class="font-headline-sm text-headline-sm">Operating Hours</h3>
+</div>
+<ul class="space-y-sm">
+<li class="flex justify-between font-body-md text-on-surface-variant">
+<span>Monday - Friday</span>
+<span class="font-semibold text-primary">8:00 AM - 7:00 PM</span>
+</li>
+<li class="flex justify-between font-body-md text-on-surface-variant">
+<span>Saturday</span>
+<span class="font-semibold text-primary">9:00 AM - 4:00 PM</span>
+</li>
+<li class="flex justify-between font-body-md text-on-surface-variant">
+<span>Sunday</span>
+<span class="text-error font-medium">Closed</span>
+</li>
+</ul>
+</div>
+<!-- Contact Info -->
+<div class="glass-card rounded-xl p-md space-y-md shadow-lg">
+<div class="flex items-start gap-sm">
+<div class="p-2 bg-secondary/10 rounded-lg text-secondary">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary">Clinic Location</h4>
+<p class="font-body-md text-on-surface-variant">Iqbal Plaza, N-35, Kehal,<br/>Abbottabad, Pakistan</p>
+</div>
+</div>
+<div class="flex items-start gap-sm">
+<div class="p-2 bg-secondary/10 rounded-lg text-secondary">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary">Phone Support</h4>
+<p class="font-body-md text-on-surface-variant">+1 (555) 987-6543</p>
+</div>
+</div>
+<div class="flex items-start gap-sm">
+<div class="p-2 bg-secondary/10 rounded-lg text-secondary">
+<span class="material-symbols-outlined">emergency</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary">Emergency Contact</h4>
+<p class="font-body-md text-on-surface-variant font-semibold text-error">+1 (555) 911-DENT</p>
+</div>
+</div>
+</div>
+<!-- Map Placeholder -->
+<div class="rounded-xl overflow-hidden h-48 shadow-lg">
+<div class="w-full h-full bg-surface-container flex items-center justify-center relative overflow-hidden group" data-location="Abbottabad, Pakistan" style="">
+<img class="w-full h-full object-cover" data-alt="A clean, minimalist map rendering of a city district with a focus on medical buildings. The map uses a light-mode clinical color palette of whites, grays, and soft blues. A single royal blue pin marks the clinic location." src="./assets/Basic map.png"/>
+<div class="absolute inset-0 bg-primary/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="bg-white text-primary px-4 py-2 rounded-full font-label-md shadow-lg">Get Directions</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-surface border-t border-outline-variant text-white" style="background-color: #004a7c; color: white;">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-gutter py-xl max-w-[1280px] mx-auto">
+<div class="space-y-sm">
+<div class="font-headline-sm text-headline-sm font-bold text-primary-fixed-dim">Save Teeth Dental Clinic</div>
+<p class="font-body-md text-white">Advanced oral healthcare focusing on clinical precision and patient comfort since 1998.</p>
+</div>
+<div>
+<h4 class="font-label-md text-label-md mb-md text-primary-fixed-dim">Save Teeth Dental Clinic</h4>
+<ul class="space-y-xs">
+<li><a class="hover:text-secondary-container transition-transform hover:translate-x-1 inline-block text-white" href="#">Services &amp; Pricing</a></li>
+<li><a class="hover:text-secondary-container transition-transform hover:translate-x-1 inline-block text-white" href="#">Patient Education</a></li>
+<li><a class="hover:text-secondary-container transition-transform hover:translate-x-1 inline-block text-white" href="#">Insurance Partners</a></li>
+<li><a class="hover:text-secondary-container transition-transform hover:translate-x-1 inline-block text-white" href="#">Careers</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md mb-md text-primary-fixed-dim">Save Teeth Dental Clinic</h4>
+<ul class="space-y-xs">
+<li><a class="hover:text-secondary-container transition-transform hover:translate-x-1 inline-block text-white" href="#">Implantology</a></li>
+<li><a class="hover:text-secondary-container transition-transform hover:translate-x-1 inline-block text-white" href="#">Periodontics</a></li>
+<li><a class="hover:text-secondary-container transition-transform hover:translate-x-1 inline-block text-white" href="#">Pediatric Dentistry</a></li>
+<li><a class="hover:text-secondary-container transition-transform hover:translate-x-1 inline-block text-white" href="#">Cosmetic Veneers</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md mb-md text-primary-fixed-dim">Save Teeth Dental Clinic</h4>
+<div class="space-y-xs text-white"><p>Address: Iqbal Plaza, N-35, Kehal, Abbottabad</p>
+<p>Phone: +1 555-987-6543</p>
+<p>Email: care@dentalproclinic.com</p>
+<div class="flex gap-sm mt-sm">
+<span class="material-symbols-outlined p-2 rounded-full text-on-primary-fixed cursor-pointer hover:bg-primary transition-colors bg-primary-fixed-dim">public</span>
+<span class="material-symbols-outlined p-2 rounded-full text-on-primary-fixed cursor-pointer hover:bg-primary transition-colors bg-primary-fixed-dim">alternate_email</span>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t border-outline-variant/30 py-6 text-center text-label-sm text-white">© 2024 Save Teeth Dental Clinic. All rights reserved.</div>
+</footer>
+<script>
+        // Micro-interaction for form focus
+        document.querySelectorAll('input, select, textarea').forEach(el => {
+            el.addEventListener('focus', () => {
+                el.parentElement.querySelector('label').classList.add('text-secondary');
+            });
+            el.addEventListener('blur', () => {
+                el.parentElement.querySelector('label').classList.remove('text-secondary');
+            });
+        });
+    </script>
+</body></html>

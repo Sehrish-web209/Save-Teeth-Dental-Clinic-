@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us | Save Teeth Dental Clinic</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Theme Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-secondary-fixed": "#001a42",
+                "outline": "#727780",
+                "on-tertiary-fixed": "#00201c",
+                "primary": "#003358",
+                "inverse-surface": "#2e3132",
+                "secondary": "#0058be",
+                "on-secondary": "#ffffff",
+                "error": "#ba1a1a",
+                "inverse-primary": "#9ccaff",
+                "surface-tint": "#296195",
+                "surface": "#f8f9fb",
+                "on-background": "#191c1e",
+                "inverse-on-surface": "#f0f1f3",
+                "outline-variant": "#c1c7d0",
+                "secondary-container": "#2170e4",
+                "primary-container": "#004a7c",
+                "on-tertiary": "#ffffff",
+                "on-primary-container": "#87baf3",
+                "on-secondary-fixed-variant": "#004395",
+                "on-primary-fixed-variant": "#00497b",
+                "surface-container-high": "#e7e8ea",
+                "background": "#f8f9fb",
+                "surface-container": "#edeef0",
+                "primary-fixed": "#d0e4ff",
+                "on-primary-fixed": "#001d35",
+                "surface-container-highest": "#e1e2e4",
+                "on-secondary-container": "#fefcff",
+                "surface-dim": "#d9dadc",
+                "error-container": "#ffdad6",
+                "on-surface-variant": "#42474f",
+                "on-primary": "#ffffff",
+                "on-tertiary-fixed-variant": "#005047",
+                "surface-container-low": "#f3f4f6",
+                "surface-container-lowest": "#ffffff",
+                "tertiary": "#003831",
+                "primary-fixed-dim": "#9ccaff",
+                "secondary-fixed": "#d8e2ff",
+                "surface-variant": "#e1e2e4",
+                "surface-bright": "#f8f9fb",
+                "tertiary-fixed": "#62fae3",
+                "tertiary-fixed-dim": "#3cddc7",
+                "on-surface": "#191c1e",
+                "secondary-fixed-dim": "#adc6ff",
+                "tertiary-container": "#005148",
+                "on-tertiary-container": "#1accb7",
+                "on-error": "#ffffff",
+                "on-error-container": "#93000a"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "xl": "80px",
+                "base": "8px",
+                "lg": "48px",
+                "sm": "12px",
+                "xs": "4px",
+                "gutter": "24px",
+                "margin": "32px",
+                "md": "24px"
+            },
+            "fontFamily": {
+                "headline-sm": ["Inter"],
+                "label-md": ["Inter"],
+                "body-md": ["Inter"],
+                "headline-md": ["Inter"],
+                "display-lg-mobile": ["Inter"],
+                "body-lg": ["Inter"],
+                "label-sm": ["Inter"],
+                "display-lg": ["Inter"]
+            },
+            "fontSize": {
+                "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 24px rgba(0, 51, 88, 0.08);
+        }
+        .clinical-gradient-text {
+            background: linear-gradient(135deg, #003358 0%, #0058be 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .clinical-icon-gradient {
+            background: linear-gradient(135deg, #1accb7 0%, #0058be 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .map-overlay {
+            background: linear-gradient(to right, rgba(248, 249, 251, 0.9), transparent);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl border-b border-white/20 shadow-[0_8px_24px_rgba(0,51,88,0.08)]">
+<div class="flex justify-between items-center px-gutter py-4 max-w-[1280px] mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary tracking-tight">Save Teeth Dental Clinic</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-label-md text-label-md text-on-surface-variant pb-1 hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant pb-1 hover:text-primary transition-colors" href="About.html">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant pb-1 hover:text-primary transition-colors" href="Services.html">Services</a>
+<a class="font-label-md text-label-md text-on-surface-variant pb-1 hover:text-primary transition-colors" href="Doctors.html">Doctors</a>
+<a class="font-label-md text-label-md text-on-surface-variant pb-1 hover:text-primary transition-colors" href="Testimonials.html">Testimonials</a>
+<a class="font-label-md text-label-md text-primary border-b-2 border-primary pb-1" href="Contact.html">Contact</a>
+</div>
+<a href="Appointment.html"
+   class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-label-md text-label-md hover:opacity-90 active:scale-95 transition-all shadow-md">
+    Book Appointment
+</a>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="max-w-[1280px] mx-auto px-gutter mb-xl text-center">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary-fixed text-primary font-label-sm text-label-sm mb-6">
+<span class="material-symbols-outlined text-[18px]">support_agent</span>
+                GET IN TOUCH
+            </div>
+<h1 class="font-display-lg text-display-lg clinical-gradient-text mb-6">Connect with Clinical Excellence</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                Have questions about your dental health or our advanced treatments? Our patient care team is here to assist you with precision and care.
+            </p>
+</section>
+<!-- Main Contact Content: Bento Grid Layout -->
+<section class="max-w-[1280px] mx-auto px-gutter grid grid-cols-1 lg:grid-cols-12 gap-gutter mb-xl">
+<!-- Contact Form Area (Glassmorphism) -->
+<div class="lg:col-span-7 glass-card rounded-xl p-8 lg:p-10">
+<h2 class="font-headline-md text-headline-md text-primary mb-8">Send Us a Secure Message</h2>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant ml-1">Full Name</label>
+<input class="w-full bg-surface-container-low border-none focus:ring-2 focus:ring-secondary rounded-lg px-4 py-3 placeholder:text-outline-variant transition-all" placeholder="Dr. Jane Smith" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant ml-1">Email Address</label>
+<input class="w-full bg-surface-container-low border-none focus:ring-2 focus:ring-secondary rounded-lg px-4 py-3 placeholder:text-outline-variant transition-all" placeholder="jane@example.com" type="email"/>
+</div>
+<div class="space-y-2 md:col-span-2">
+<label class="font-label-md text-label-md text-on-surface-variant ml-1">Service of Interest</label>
+<select class="w-full bg-surface-container-low border-none focus:ring-2 focus:ring-secondary rounded-lg px-4 py-3 text-on-surface-variant transition-all">
+<option>General Dentistry</option>
+<option>Orthodontics</option>
+<option>Cosmetic Dental</option>
+<option>Emergency Care</option>
+</select>
+</div>
+<div class="space-y-2 md:col-span-2">
+<label class="font-label-md text-label-md text-on-surface-variant ml-1">Your Message</label>
+<textarea class="w-full bg-surface-container-low border-none focus:ring-2 focus:ring-secondary rounded-lg px-4 py-3 placeholder:text-outline-variant transition-all" placeholder="How can we help with your smile today?" rows="4"></textarea>
+</div>
+<div class="md:col-span-2">
+<button class="w-full bg-primary text-on-primary py-4 rounded-lg font-headline-sm text-headline-sm flex items-center justify-center gap-3 hover:opacity-95 transition-opacity shadow-lg" type="submit">
+                            Dispatch Inquiry
+                            <span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</form>
+</div>
+<!-- Info Cards Sidebar -->
+<div class="lg:col-span-5 flex flex-col gap-gutter">
+<!-- Direct Contact Cards -->
+<div class="glass-card rounded-xl p-6 flex items-start gap-5 transition-transform hover:-translate-y-1">
+<div class="w-14 h-14 rounded-lg bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[32px]">call</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Priority Support</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-2">Available 24/7 for urgent care.</p>
+<p class="font-label-md text-label-md text-secondary">+1 (800) 123-4567</p>
+</div>
+</div>
+<div class="glass-card rounded-xl p-6 flex items-start gap-5 transition-transform hover:-translate-y-1">
+<div class="w-14 h-14 rounded-lg bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[32px]">location_on</span>
+</div>
+<div><h3 class="font-headline-sm text-headline-sm text-primary">Clinic Headquarters</h3><p class="font-body-md text-body-md text-on-surface-variant mb-2">Iqbal Plaza, N-35, Kehal</p><p class="font-label-md text-label-md text-secondary">Abbottabad, Pakistan</p></div>
+</div>
+<!-- Hours Card -->
+<div class="glass-card rounded-xl p-8 bg-primary text-white border-none flex-grow">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-secondary-fixed">schedule</span>
+<h3 class="font-headline-sm text-headline-sm">Clinical Hours</h3>
+</div>
+<ul class="space-y-4">
+<li class="flex justify-between items-center border-b border-primary/20 pb-2">
+<span class="font-body-md">Mon — Fri</span>
+<span class="font-label-md">08:00 AM — 07:00 PM</span>
+</li>
+<li class="flex justify-between items-center border-b border-primary/20 pb-2">
+<span class="font-body-md">Saturday</span>
+<span class="font-label-md">09:00 AM — 04:00 PM</span>
+</li>
+<li class="flex justify-between items-center text-on-primary-container/60">
+<span class="font-body-md">Sunday</span>
+<span class="font-label-md italic">Closed (Emergency Only)</span>
+</li>
+</ul>
+<div class="mt-8 p-4 rounded-lg bg-primary/20 flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary-fixed" style="font-variation-settings: 'FILL' 1">verified</span>
+<span class="font-label-sm text-label-sm">Authorized Medical Institution</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Modern Map Section -->
+<section class="max-w-[1280px] mx-auto px-gutter mb-xl">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center bg-surface-container-low rounded-2xl overflow-hidden border border-outline-variant/20">
+<div class="h-full min-h-[400px] overflow-hidden rounded-lg">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.1134108465485!2d73.212593274819!3d34.14344051291074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38de31705c0169eb%3A0xb9aa5743e60e3cb6!2sSave%20Teeth%20Dental%20Clinic!5e0!3m2!1sen!2s!4v1782970566214!5m2!1sen!2s"
+        class="w-full h-full min-h-[400px] rounded-lg"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin">
+    </iframe>
+</div>
+<div class="p-8 lg:p-12">
+<div class="flex items-center gap-2 text-primary font-label-sm text-label-sm mb-3">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1">circle</span>
+LIVE CLINIC STATUS: OPEN
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Save Teeth Abbottabad</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">Patient arrival lobby located on the 4th floor of the Medical Excellence Center. Our facility is equipped with state-of-the-art diagnostic tools for your convenience.</p>
+<button class="flex items-center gap-2 text-secondary font-label-md text-label-md hover:gap-4 transition-all">
+Get Dynamic Directions
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Newsletter / FAQ Mini Section -->
+<section class="max-w-[1280px] mx-auto px-gutter mb-xl">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="p-8 rounded-xl bg-surface-container flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-[40px] text-primary mb-4">clinical_notes</span>
+<h4 class="font-headline-sm text-headline-sm mb-2">Medical Reports</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-4">Access your treatment history through our secure patient portal.</p>
+<a class="text-secondary font-label-md underline underline-offset-4" href="#">Login to Portal</a>
+</div>
+<div class="p-8 rounded-xl bg-surface-container flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-[40px] text-primary mb-4">payments</span>
+<h4 class="font-headline-sm text-headline-sm mb-2">Billing Inquiries</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-4">Detailed breakdowns of insurance coverage and payment plans.</p>
+<a class="text-secondary font-label-md underline underline-offset-4" href="#">View Billing FAQ</a>
+</div>
+<div class="p-8 rounded-xl bg-surface-container flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-[40px] text-primary mb-4">chat_bubble</span>
+<h4 class="font-headline-sm text-headline-sm mb-2">Virtual Consult</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-4">First-time patient? Book a 15-min discovery video call today.</p>
+<a class="text-secondary font-label-md underline underline-offset-4" href="#">Schedule Call</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-outline-variant text-white bg-primary-container">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-gutter py-xl max-w-[1280px] mx-auto">
+<div>
+<div class="font-headline-sm text-headline-sm font-bold mb-4 text-white">SAVE TEETH DENTAL CLINIC</div>
+<p class="font-body-md text-body-md text-white">Defining clinical precision in modern dental care with a human-centric approach.</p>
+</div>
+<div>
+<h4 class="font-label-md text-label-md mb-4 uppercase tracking-wider text-primary-fixed-dim">Quick Links</h4>
+<ul class="space-y-2">
+<li><a class="font-body-md text-body-md hover:translate-x-1 hover:text-secondary transition-all inline-block text-white" href="#">Our Doctors</a></li>
+<li><a class="font-body-md text-body-md hover:translate-x-1 hover:text-secondary transition-all inline-block text-white" href="#">Patient Plans</a></li>
+<li><a class="font-body-md text-body-md hover:translate-x-1 hover:text-secondary transition-all inline-block text-white" href="#">Clinic News</a></li>
+<li><a class="font-body-md text-body-md hover:translate-x-1 hover:text-secondary transition-all inline-block text-white" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md mb-4 uppercase tracking-wider text-primary-fixed-dim">Services</h4>
+<ul class="space-y-2">
+<li><a class="font-body-md text-body-md hover:translate-x-1 hover:text-secondary transition-all inline-block text-white" href="#">Dental Implants</a></li>
+<li><a class="font-body-md text-body-md hover:translate-x-1 hover:text-secondary transition-all inline-block text-white" href="#">Orthodontics</a></li>
+<li><a class="font-body-md text-body-md hover:translate-x-1 hover:text-secondary transition-all inline-block text-white" href="#">Teeth Whitening</a></li>
+<li><a class="font-body-md text-body-md hover:translate-x-1 hover:text-secondary transition-all inline-block text-white" href="#">Oral Surgery</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md mb-4 uppercase tracking-wider text-primary-fixed-dim">Contact Info</h4>
+<p class="font-body-md text-body-md mb-2 text-white">Iqbal Plaza, N-35, Kehal, Abbottabad, Pakistan</p>
+<p class="font-body-md text-body-md mb-2 text-white">Phone: 0322-9526258, 0318-5904700, 0320-8561100</p><p class="font-body-md text-body-md mb-4 text-white">Email: nasirtouqeer451@gmail.com</p><h4 class="font-label-md text-label-md mb-2 uppercase tracking-wider text-primary-fixed-dim">Opening Hours</h4><ul class="space-y-1 font-body-md text-body-md text-white"><li>Mon – Thu: 8:00 AM – 8:00 PM</li><li>Fri: 8:00 AM – 6:00 PM</li><li>Sat: 8:00 AM – 8:00 PM</li><li>Sun: Closed</li></ul>
+</div>
+</div>
+<div class="border-t border-outline-variant/30 py-6 text-center">
+<p class="font-label-sm text-label-sm text-white">© 2024 Save Teeth Dental Clinic. All rights reserved.</p>
+</div>
+</footer>
+<!-- Image Prompts Integration -->
+<!-- [Map Background Image Prompt] 
+    A sophisticated, minimalist architectural map visualization of Manhattan, New York. The style is clean clinical modernism with a high-key light palette, featuring shades of off-white, light blue, and platinum gray. There are no distracting colors, only elegant thin lines and soft shadows representing buildings. The aesthetic is high-fidelity and professional, suggesting a premium medical district. 
+    -->
+<script>
+        // Micro-interactions for form inputs
+        document.querySelectorAll('input, textarea, select').forEach(el => {
+            el.addEventListener('focus', () => {
+                el.parentElement.querySelector('label').classList.add('text-secondary');
+            });
+            el.addEventListener('blur', () => {
+                el.parentElement.querySelector('label').classList.remove('text-secondary');
+            });
+        });
+
+        // Simple parallax effect for map overlay
+        window.addEventListener('scroll', () => {
+            const map = document.querySelector('[data-location]');
+            const scrolled = window.pageYOffset;
+            if (map) {
+                map.style.backgroundPositionY = (scrolled * 0.1) + 'px';
+            }
+        });
+    </script>
+</body></html>
