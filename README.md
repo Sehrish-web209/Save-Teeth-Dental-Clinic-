@@ -18,7 +18,7 @@ https://sehrish-web209.github.io/Save-Teeth-Dental-Clinic-/
 
 ### 🏠 Home Page
 
-![Home Page](Screenshots/Home page.png)
+![Home Page](/Screenshots/Home page.png)
 
 ### ℹ️ About Page
 
@@ -75,18 +75,18 @@ https://sehrish-web209.github.io/Save-Teeth-Dental-Clinic-/
 Save-Teeth-Dental-Clinic/
 │
 ├── assets/
-│   ├── Clinic interior.jpg
-│   ├── hero.jpg
+│   ├── Clinic interior.jpeg
+│   ├── hero.jpeg
 │   └── ...
 │
 ├── Screenshots/
-│   ├── home-page.png
-│   ├── about-page.png
-│   ├── services-page.png
-│   ├── doctors-page.png
-│   ├── testimonials-page.png
-│   ├── contact-page.png
-│   └── appointment-page.png
+│   ├── Home page.png
+│   ├── About page.png
+│   ├── Services page.png
+│   ├── Doctors page.png
+│   ├── Testimonials page.png
+│   ├── Contact page.png
+│   └── Appointment page.png
 │
 ├── index.html
 ├── About.html
