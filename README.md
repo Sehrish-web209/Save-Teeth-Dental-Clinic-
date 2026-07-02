@@ -18,31 +18,31 @@ https://sehrish-web209.github.io/Save-Teeth-Dental-Clinic-/
 
 ### 🏠 Home Page
 
-![Home Page](/Screenshots/Home page.png)
+![Home Page](Screenshots/Home-page.png)
 
 ### ℹ️ About Page
 
-![About Page](Screenshots/About page.png)
+![About Page](Screenshots/About-page.png)
 
 ### 🦷 Services Page
 
-![Services Page](Screenshots/Services page.png)
+![Services Page](Screenshots/Services-page.png)
 
 ### 👨‍⚕️ Doctors Page
 
-![Doctors Page](Screenshots/Doctors page.png)
+![Doctors Page](Screenshots/Doctors-page.png)
 
 ### ⭐ Testimonials Page
 
-![Testimonials Page](Screenshots/Testimonials page.png)
+![Testimonials Page](Screenshots/Testimonials-page.png)
 
 ### 📞 Contact Page
 
-![Contact Page](Screenshots/Contact page.png)
+![Contact Page](Screenshots/Contact-page.png)
 
 ### 📅 Appointment Page
 
-![Appointment Page](Screenshots/Appointment page.png)
+![Appointment Page](Screenshots/Appointment-page.png)
 
 
 ## ✨ Features
@@ -80,13 +80,13 @@ Save-Teeth-Dental-Clinic/
 │   └── ...
 │
 ├── Screenshots/
-│   ├── Home page.png
-│   ├── About page.png
-│   ├── Services page.png
-│   ├── Doctors page.png
-│   ├── Testimonials page.png
-│   ├── Contact page.png
-│   └── Appointment page.png
+│   ├── Home-page.png
+│   ├── About-page.png
+│   ├── Services-page.png
+│   ├── Doctors-page.png
+│   ├── Testimonials-page.png
+│   ├── Contact-page.png
+│   └── Appointment-page.png
 │
 ├── index.html
 ├── About.html
@@ -97,8 +97,17 @@ Save-Teeth-Dental-Clinic/
 ├── Appointment.html
 └── README.md
 
+## Responsive Design
+The website has been designed to work across:
+
+Desktop
+Laptop
+Tablet
+Mobile
+
 
 ## 🚀 Getting Started
+
 
 Clone the repository:
 
@@ -127,5 +136,7 @@ https://sehrish-web209.github.io/Save-Teeth-Dental-Clinic-/
 BS Information Technology (7th Semester)
 
 GitHub: https://github.com/Sehrish-web209
+
+Save Teeth Dental Clinic Project – Showcasing web development skills and projects.
 
 
