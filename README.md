@@ -53,6 +53,7 @@ https://sehrish-web209.github.io/Save-Teeth-Dental-Clinic-/
 * Dedicated pages for services, doctors, testimonials, and contact information
 * Online appointment booking page
 * Smooth scrolling and subtle UI animations
+* Embedded map 
 * Consistent design system with reusable components
 * Professional typography and Material Symbols icons
 * Organized project structure for easy maintenance
