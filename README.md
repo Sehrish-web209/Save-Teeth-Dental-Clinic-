@@ -64,8 +64,6 @@ Open **index.html** in your browser, or launch the project using the **VS Code L
 
 ## 📂 Project Structure
 
-## 📂 Project Structure
-
 ```text
 Save-Teeth-Dental-Clinic/
 │
