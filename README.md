@@ -46,69 +46,50 @@ https://sehrish-web209.github.io/Save-Teeth-Dental-Clinic-/
 
 ## 🚀 Getting Started
 
-Clone the repository:
+### 1. Clone the repository
 
+```bash
 git clone https://github.com/Sehrish-web209/Save-Teeth-Dental-Clinic-.git
+```
 
-Open the project folder:
+### 2. Navigate to the project folder
 
+```bash
 cd Save-Teeth-Dental-Clinic-
+```
 
-Run the project by opening **index.html** in your browser, or use the **VS Code Live Server** extension for a better development experience.
+### 3. Run the project
+
+Open **index.html** in your browser, or launch the project using the **VS Code Live Server** extension for a better development experience.
 
 ## 📂 Project Structure
 
+## 📂 Project Structure
+
+```text
 Save-Teeth-Dental-Clinic/
-
 │
-
-├── 📄 index.html              
-
-├── 📄 About.html              
-
-├── 📄 Services.html           
-
-├── 📄 Doctors.html            
-
-├── 📄 Testimonials.html      
-
-├── 📄 Contact.html            
-
-├── 📄 Appointment.html        
-
+├── 📄 index.html
+├── 📄 About.html
+├── 📄 Services.html
+├── 📄 Doctors.html
+├── 📄 Testimonials.html
+├── 📄 Contact.html
+├── 📄 Appointment.html
 ├── 📄 README.md               ← Project documentation
-
-├── 📄 Screenshots.md
-
+├── 📄 SCREENSHOTS.md          ← Screenshot gallery
 │
-
 ├── 📁 assets/
-
-│   ├── Clinic interior.jpeg   
-
-│   ├── hero.jpeg            
-
+│   ├── Clinic interior.jpeg
+│   ├── hero.jpeg
 │   └── ...                    ← Other assets/images
-
 │
-
-├── 📁 Screenshots/           
-
-├── 📁 Screenshots/
-
-│   ├── Home-page.png
-
-│   ├── About-page.png
-
-│   ├── Services-page.png
-
-│   ├── Doctors-page.png
-
-│   ├── Testimonials-page.png
-
-│   ├── Contact-page.png
-
-│   └── Appointment-page.png
+└── 📁 Screenshots/
+    ├── Home-page.png
+    ├── About-page.png
+    ├── Services-page.png
+    ├── ...                    ← Other screenshots
+```
 
 ## 📱 Responsive Design
 
