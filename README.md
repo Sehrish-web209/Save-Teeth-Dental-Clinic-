@@ -20,30 +20,7 @@ https://sehrish-web209.github.io/Save-Teeth-Dental-Clinic-/
 
 ![Home Page](Screenshots/Home-page.png)
 
-### ℹ️ About Page
-
-![About Page](Screenshots/About-page.png)
-
-### 🦷 Services Page
-
-![Services Page](Screenshots/Services-page.png)
-
-### 👨‍⚕️ Doctors Page
-
-![Doctors Page](Screenshots/Doctors-page.png)
-
-### ⭐ Testimonials Page
-
-![Testimonials Page](Screenshots/Testimonials-page.png)
-
-### 📞 Contact Page
-
-![Contact Page](Screenshots/Contact-page.png)
-
-### 📅 Appointment Page
-
-![Appointment Page](Screenshots/Appointment-page.png)
-
+**View all screenshots:** [Click Here](SCREENSHOTS.md)
 
 ## ✨ Features
 
@@ -68,49 +45,6 @@ https://sehrish-web209.github.io/Save-Teeth-Dental-Clinic-/
 * Google Fonts (Inter)
 * Material Symbols
 
-
-
-## 📂 Project Structure
-
-
-Save-Teeth-Dental-Clinic/
-│
-├── 📄 index.html              
-├── 📄 About.html              
-├── 📄 Services.html           
-├── 📄 Doctors.html            
-├── 📄 Testimonials.html      
-├── 📄 Contact.html            
-├── 📄 Appointment.html        
-├── 📄 README.md               ← Project documentation
-│
-├── 📁 assets/
-│   ├── Clinic interior.jpeg   
-│   ├── hero.jpeg            
-│   └── ...                    ← Other assets/images
-│
-├── 📁 Screenshots/           
-│   ├── Home-page.png
-│   ├── About-page.png
-│   ├── Services-page.png
-│   ├── Doctors-page.png
-│   ├── Testimonials-page.png
-│   ├── Contact-page.png
-│   └── Appointment-page.png
-
-## 📱 Responsive Design
-
-The website has been designed to work across:
-
-Desktop
-
-Laptop
-
-Tablet
-
-Mobile
-
-
 ## 🚀 Getting Started
 
 
@@ -125,6 +59,75 @@ cd Save-Teeth-Dental-Clinic-
 
 
 Run the project by opening **index.html** in your browser, or use the **VS Code Live Server** extension for a better development experience.
+
+
+## 📂 Project Structure
+
+
+Save-Teeth-Dental-Clinic/
+
+│
+
+├── 📄 index.html              
+
+├── 📄 About.html              
+
+├── 📄 Services.html           
+
+├── 📄 Doctors.html            
+
+├── 📄 Testimonials.html      
+
+├── 📄 Contact.html            
+
+├── 📄 Appointment.html        
+
+├── 📄 README.md               ← Project documentation
+
+├── 📄 Screenshots.md
+
+│
+
+├── 📁 assets/
+
+│   ├── Clinic interior.jpeg   
+
+│   ├── hero.jpeg            
+
+│   └── ...                    ← Other assets/images
+
+│
+
+├── 📁 Screenshots/           
+
+│   ├── Home-page.png
+
+│   ├── About-page.png
+
+│   ├── Services-page.png
+
+│   ├── Doctors-page.png
+
+│   ├── Testimonials-page.png
+
+│   ├── Contact-page.png
+
+│   └── Appointment-page.png
+
+
+
+## 📱 Responsive Design
+
+The website has been designed to work across:
+
+* Desktop
+
+* Laptop
+
+* Tablet
+
+* Mobile
+
 
 ## 🌍 Deployment
 
