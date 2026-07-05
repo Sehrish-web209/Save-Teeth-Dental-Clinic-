@@ -36,7 +36,6 @@ https://sehrish-web209.github.io/Save-Teeth-Dental-Clinic-/
 * Organized project structure for easy maintenance
 
 
-
 ## 🛠️ Tech Stack
 
 * HTML5
@@ -57,18 +56,10 @@ cd Save-Teeth-Dental-Clinic-
 
 Run the project by opening **index.html** in your browser, or use the **VS Code Live Server** extension for a better development experience.
 
-<<<<<<< HEAD
-
-## 📂 Project Structure
-
-
-Save-Teeth-Dental-Clinic/
-
-=======
 ## 📂 Project Structure
 
 Save-Teeth-Dental-Clinic/
->>>>>>> eb9d9b386d54ea65bb47f17f4ef65aabd56b8386
+
 │
 
 ├── 📄 index.html              
@@ -87,11 +78,8 @@ Save-Teeth-Dental-Clinic/
 
 ├── 📄 README.md               ← Project documentation
 
-<<<<<<< HEAD
 ├── 📄 Screenshots.md
 
-=======
->>>>>>> eb9d9b386d54ea65bb47f17f4ef65aabd56b8386
 │
 
 ├── 📁 assets/
@@ -104,11 +92,9 @@ Save-Teeth-Dental-Clinic/
 
 │
 
-<<<<<<< HEAD
 ├── 📁 Screenshots/           
-=======
-├── 📁 Screenshots/ 
->>>>>>> eb9d9b386d54ea65bb47f17f4ef65aabd56b8386
+
+├── 📁 Screenshots/
 
 │   ├── Home-page.png
 
@@ -124,16 +110,10 @@ Save-Teeth-Dental-Clinic/
 
 │   └── Appointment-page.png
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> eb9d9b386d54ea65bb47f17f4ef65aabd56b8386
 ## 📱 Responsive Design
 
 The website has been designed to work across:
 
-<<<<<<< HEAD
 * Desktop
 
 * Laptop
@@ -141,16 +121,6 @@ The website has been designed to work across:
 * Tablet
 
 * Mobile
-
-=======
--Desktop
-
--Laptop
-
--Tablet
-
--Mobile
->>>>>>> eb9d9b386d54ea65bb47f17f4ef65aabd56b8386
 
 ## 🌍 Deployment
 
