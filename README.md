@@ -62,9 +62,7 @@ cd Save-Teeth-Dental-Clinic-
 
 Open **index.html** in your browser, or launch the project using the **VS Code Live Server** extension for a better development experience.
 
-## 📂 Project Structure
-
-## 📂 Project Structure
+# 📂 Project Structure
 
 ```text
 Save-Teeth-Dental-Clinic/
