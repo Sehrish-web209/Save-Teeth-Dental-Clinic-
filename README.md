@@ -53,6 +53,7 @@ https://sehrish-web209.github.io/Save-Teeth-Dental-Clinic-/
 * Dedicated pages for services, doctors, testimonials, and contact information
 * Online appointment booking page
 * Smooth scrolling and subtle UI animations
+* Embedded map 
 * Consistent design system with reusable components
 * Professional typography and Material Symbols icons
 * Organized project structure for easy maintenance
@@ -74,12 +75,21 @@ https://sehrish-web209.github.io/Save-Teeth-Dental-Clinic-/
 
 Save-Teeth-Dental-Clinic/
 │
-├── assets/
-│   ├── Clinic interior.jpeg
-│   ├── hero.jpeg
-│   └── ...
+├── 📄 index.html              
+├── 📄 About.html              
+├── 📄 Services.html           
+├── 📄 Doctors.html            
+├── 📄 Testimonials.html      
+├── 📄 Contact.html            
+├── 📄 Appointment.html        
+├── 📄 README.md               ← Project documentation
 │
-├── Screenshots/
+├── 📁 assets/
+│   ├── Clinic interior.jpeg   
+│   ├── hero.jpeg            
+│   └── ...                    ← Other assets/images
+│
+├── 📁 Screenshots/           
 │   ├── Home-page.png
 │   ├── About-page.png
 │   ├── Services-page.png
@@ -87,22 +97,17 @@ Save-Teeth-Dental-Clinic/
 │   ├── Testimonials-page.png
 │   ├── Contact-page.png
 │   └── Appointment-page.png
-│
-├── index.html
-├── About.html
-├── Services.html
-├── Doctors.html
-├── Testimonials.html
-├── Contact.html
-├── Appointment.html
-└── README.md
 
-## Responsive Design
+## 📱 Responsive Design
+
 The website has been designed to work across:
 
 Desktop
+
 Laptop
+
 Tablet
+
 Mobile
 
 
@@ -126,6 +131,7 @@ Run the project by opening **index.html** in your browser, or use the **VS Code 
 This project is deployed using **GitHub Pages**.
 
 Live Website:
+
 https://sehrish-web209.github.io/Save-Teeth-Dental-Clinic-/
 
 
@@ -138,5 +144,3 @@ BS Information Technology (7th Semester)
 GitHub: https://github.com/Sehrish-web209
 
 Save Teeth Dental Clinic Project – Showcasing web development skills and projects.
-
-
